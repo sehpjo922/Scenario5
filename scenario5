@@ -1,0 +1,19 @@
+public class BudgetCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Monthly income: ");
+        double income = input.nextDouble();
+        
+        System.out.print("Monthly expenses: ");
+        double expenses = input.nextDouble();
+        
+        System.out.print("Savings goal: ");
+        double savingsGoal = input.nextDouble();
+        
+        double remainingIncome = income - expenses;
+        double monthsToGoal = savingsGoal / remainingIncome;
+        
+        System.out.println("Months to achieve savings goal: " + monthsToGoal);
+    }
+}
